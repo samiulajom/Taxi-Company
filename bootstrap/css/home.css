@@ -1,0 +1,1445 @@
+/* ******************
+Tempalete Name:Taxi -company Htm 5 Tempalets
+Author Name:NSS Theme
+Designer:Md. Samiul Ajom
+===============================
+Comment Step:
+0.root 
+1.common section
+2.header section
+3.banner section
+4.toxic section
+5.service section
+6.booking section
+7.expart driver
+8.taxi-app 
+9.taxi-feedback
+10.taxi-rate
+11.supper taxi
+12.latest news
+13.footer  
+******************** */
+/* 0.Root start */
+:root {
+  --yellow: rgb(255, 192, 0);
+  --black: rgb(28, 28, 26);
+  --white: #fff;
+  --silver: rgb(171 171 171);
+  --Catamaran: "Catamaran", sans-serif;
+  --Roboto: "Roboto", sans-serif;
+}
+/* 0.Root end*/
+/* 1.common start */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--white);
+  font-family: var(--Roboto);
+  font-weight: 400;
+}
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.common {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: var(--Catamaran);
+  line-height: 60px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+.small-tittle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--yellow);
+}
+.small-content {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--white);
+}
+.small-caption {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--silver);
+}
+.sub-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+.react {
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* button  */
+.taxi-btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  color: var(--white);
+  background: var(--black);
+  border: none;
+  padding: 8px 32px;
+  border-radius: 0;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+}
+.yellow-btn {
+  background: var(--yellow);
+  color: var(--black);
+}
+.light-btn {
+  background: var(--white);
+  color: var(--black);
+}
+.yellow-btn:hover,
+.light-btn:hover {
+  background: var(--black);
+  color: var(--white);
+}
+.dark-btn:hover {
+  background: var(--white);
+  color: var(--black);
+}
+/* button */
+/* 1.common end */
+
+/* 2.header start */
+.taxi-nav-topbar {
+  background: var(--black);
+  padding: 0px 80px 0px 380px;
+  align-self: flex-start;
+  height: 80px;
+}
+.taxi-nav-topbar a {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--white);
+}
+.taxi-nav-topbar a img {
+  height: 16px;
+}
+.taxi-nav-topbar .top-right {
+  gap: 60px;
+}
+.taxi-nav-topbar p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.fixed .taxi-nav-topbar {
+  display: none;
+}
+.navbar-toggler:focus {
+  color: var(--white);
+  box-shadow: none;
+}
+
+nav {
+  height: 100px;
+  background: var(--black);
+  z-index: 100;
+}
+
+.fixed .taxi-nav-topbar {
+  display: none;
+}
+.fixed .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: all 0.9s linear;
+  -webkit-transition: all 0.9s linear;
+  -moz-transition: all 0.9s linear;
+  -ms-transition: all 0.9s linear;
+  -o-transition: all 0.9s linear;
+}
+.nav-link.active {
+  color: var(--white);
+}
+.navbar-brand {
+  width: 380px;
+  height: 100px;
+  background: url(./../../image/hero/logoback.png);
+}
+.navbar-nav {
+  background: var(--yellow);
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--Roboto);
+  color: var(--black);
+  padding: 0 !important;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.dropdown-item {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--Roboto);
+  color: var(--black);
+}
+.dropdown-item:hover {
+  background: var(--black);
+}
+.nav-link:hover,
+.nav-link:focus,
+.dropdown-item:hover {
+  color: var(--white);
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.dropdown-menu {
+  background: var(--yellow);
+}
+.taxi-nav-btn {
+  background-color: rgb(29, 29, 27);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  padding: 14px 30px;
+}
+.taxi-nav-btn:hover,
+.taxi-mobile-btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.search-icon {
+  background-color: var(--yellow);
+  border: 3px solid var(--black);
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.search-icon:hover {
+  background-color: var(--white);
+  border-color: var(--black);
+}
+
+.nav-side-item {
+  height: 100%;
+  background: var(--black);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.nav-side-item p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.nav-side-item a {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--yellow);
+}
+.taxi-mobile-btn {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  background: var(--black);
+  padding: 8px 32px;
+  color: var(--white);
+  margin-left: 20px;
+}
+.taxi-mobile-btn p {
+  margin: 0;
+}
+.taxi-mobile-btn a {
+  color: var(--yellow);
+  margin: 0;
+  padding: 0;
+}
+.box-show {
+  display: flex !important;
+}
+
+.nav-search-box {
+  height: 70px;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  display: none;
+}
+.nav-search-box input {
+  font-size: 24px;
+  padding: 8px 32px;
+}
+.nav-search-box button {
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: capitalize;
+  color: var(--white);
+  background: var(--black);
+  padding: 8px 52px;
+}
+.nav-search-box button:focus {
+  background: var(--yellow);
+  color: var(--black);
+}
+/* 2.header end */
+/* 3.banner start */
+.taxi-banner {
+  background: var(--black);
+  overflow: hidden;
+}
+
+.taxi-banner .wrapper {
+  margin: 0 auto;
+}
+.taxi-banner .wrapper .taxi-banner-overlay {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  z-index: 15;
+  opacity: 0.8;
+  transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+}
+
+.taxi-banner-carousel .carousel-item::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.banner-caption {
+  font-size: 82px;
+  font-weight: 900;
+  font-family: var(--Catamaran);
+  line-height: 92px;
+  color: var(--white);
+  white-space: nowrap;
+}
+.banner-content {
+  z-index: 10;
+}
+.banner-content h4 {
+  color: var(--white);
+}
+
+.taxi-ban-btn1 {
+  color: var(--black);
+  background: var(--yellow);
+}
+.taxi-ban-btn2 {
+  color: var(--black);
+  background: var(--white);
+}
+.taxi-ban-btn1:hover {
+  color: var(--black);
+  background: var(--white);
+}
+.taxi-ban-btn2:hover {
+  color: var(--black);
+  background: var(--yellow);
+}
+
+.taxi-carousel-btn button {
+  z-index: 10;
+}
+.taxi-carousel-btn button {
+  position: absolute;
+  top: 50%;
+  z-index: 50;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.taxi-carousel-btn button::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 200px;
+  background: var(--yellow);
+  z-index: -1;
+}
+.taxi-carousel-btn button::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: var(--yellow);
+  z-index: -1;
+}
+.taxi-carousel-btn .carousel-control-prev {
+  left: -15%;
+}
+.taxi-carousel-btn .carousel-control-next {
+  right: -15%;
+}
+/* 3.banner end */
+/* 4.toxic start */
+.toxic-left-img {
+  position: relative;
+}
+.toxic-left-img::before {
+  content: "";
+  width: 30%;
+  height: 60%;
+  background: var(--yellow);
+  z-index: -1;
+  position: absolute;
+  left: 4%;
+  top: -4%;
+}
+.experience-info {
+  position: absolute;
+  bottom: 100%;
+  right: 0%;
+  transform: translate(5%, 50%);
+  padding: 0px 20px;
+  background: var(--white);
+  border-bottom: 2px solid var(--yellow);
+  z-index: 99;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-transform: translate(5%, 50%);
+  -moz-transform: translate(5%, 50%);
+  -ms-transform: translate(5%, 50%);
+  -o-transform: translate(5%, 50%);
+}
+.experience-info img {
+  height: 30px;
+  margin-top: -10px;
+  margin-right: 5px;
+}
+.years {
+  font-family: var(--Roboto);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.years:hover {
+  color: var(--yellow);
+}
+.experience-info p {
+  font-size: 18px;
+  color: #1d1d1b;
+  line-height: 28px;
+}
+.service-main-car {
+  z-index: -1;
+}
+.service-profile:hover .circle {
+  background: var(--white);
+  border: 2px solid var(--yellow);
+}
+.owner-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(8%);
+  z-index: 99;
+  -webkit-transform: translateY(8%);
+  -moz-transform: translateY(8%);
+  -ms-transform: translateY(8%);
+  -o-transform: translateY(8%);
+  border-left: 10px solid var(--white);
+  border-top: 10px solid var(--white);
+}
+.taxi-solution h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.taxi-service-right h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.taxi-service-right .btn {
+  text-transform: capitalize;
+}
+.taxi-service-right .btn:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+.diver-img img,
+.car-profile img {
+  width: 50%;
+  height: 50%;
+}
+.contact-btn:hover {
+  color: var(--black) !important;
+  background: var(--yellow) !important;
+}
+/*4.toxic end*/
+/* 5.service start */
+.taxi-service {
+  position: relative;
+  background-image: url(./../../image/service/roadservice.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 90px 0 100px 0;
+}
+.taxi-service::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--yellow);
+  opacity: 0.9;
+}
+.service-head {
+  z-index: 10;
+}
+.service-cards {
+  z-index: 10;
+  gap: 30px;
+}
+.service-cards .card {
+  max-width: 370px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.react img {
+  height: 50%;
+  width: 50%;
+}
+.taxi-service .card-text {
+  height: 80px;
+  margin: 10px 0 20px;
+  overflow-y: scroll;
+}
+.taxi-service .card-text::-webkit-scrollbar {
+  display: none;
+}
+/* firefox er scroll bar hide er jnno */
+.taxi-service .card-text {
+  scrollbar-width: none;
+}
+.service-btn {
+  color: var(--yellow);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.service-btn:hover {
+  background: var(--yellow);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+/* 5.service end */
+/*6. boooking start */
+.taxi-book {
+  padding: 100px 0;
+}
+.book-nav {
+  background: var(--black);
+}
+.book-nav li {
+  padding: 10px 0;
+  position: relative;
+}
+.book-nav li:not(:last-child)::after {
+  content: "";
+  border: 1px solid var(--yellow);
+  height: 100%;
+  margin: 15px;
+}
+.book-nav li a {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.book-nav li a:hover {
+  color: var(--yellow);
+}
+.taxi-book-bottom {
+  gap: 30px;
+}
+.book-form-left {
+  padding: 50px 0 150px 50px;
+  background-image: url(../../image/texico/showroad.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+}
+.book-form-left::after {
+  content: "";
+  background-color: rgba(28, 28, 26, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.book-form-left::before {
+  content: "HEY TEXICO";
+  position: absolute;
+  font-size: 50px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 700;
+  color: var(--yellow);
+  transform: rotate(-90deg);
+  top: 40%;
+  right: -15%;
+  z-index: -1;
+}
+.book-form-left h5 {
+  width: 80%;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--yellow);
+}
+.book-form-left .small-title {
+  color: #74787c;
+}
+.booking-employ {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--white);
+}
+.booking-employ a {
+  font-size: 15px;
+  color: var(--yellow);
+  margin-left: 15px;
+  position: relative;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.booking-employ a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -22%;
+  width: 20px;
+  height: 2px;
+  background-color: var(--yellow);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.booking-employ a:hover {
+  color: var(--black);
+}
+.booking-employ:hover a::before {
+  background-color: var(--yellow);
+}
+.book-contact {
+  background-color: var(--white);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+}
+.book-contact a {
+  color: var(--yellow);
+  width: 50px;
+  height: 50px;
+  background-color: var(--black);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.book-contact a:hover {
+  color: var(--black);
+  background: var(--yellow);
+}
+.book-contact h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--yellow);
+}
+.book-form {
+  background: var(--yellow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.book-form form input {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  margin: 10px auto;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.book-form form input:focus {
+  outline: 1px solid rgb(255, 192, 0);
+}
+.book-form form input::placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #606060;
+}
+.book-form form input[type="submit"] {
+  width: 100%;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--yellow);
+  background-color: var(--black);
+  transition: all 0.3s linear;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.book-form form input[type="submit"]:hover {
+  background-color: var(--white);
+  color: rgb(29, 29, 27);
+  font-weight: 700;
+}
+/* boooking end */
+/*7.Expart driver start  */
+.taxi-driver {
+  background: #f4f4f4;
+  padding: 100px 0;
+}
+.expart-title {
+  padding: 50px 0 100px;
+}
+.expart-driver-cards {
+  column-gap: 30px;
+  row-gap: 150px;
+  /* overflow-x: hidden; */
+}
+.expard-driver-card {
+  width: 360px;
+}
+.driver-img {
+  position: relative;
+  text-align: center;
+}
+.driver-img::before {
+  position: absolute;
+  content: url(../../image/expertdriver/taxi.png);
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -90%);
+  -webkit-transform: translate(-50%, -90%);
+  -moz-transform: translate(-50%, -90%);
+  -ms-transform: translate(-50%, -90%);
+  -o-transform: translate(-50%, -90%);
+}
+.expert-info {
+  height: 90px;
+  background: var(--white);
+  padding: 8px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+}
+.expert-info h2 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Catamaran", sans-serif;
+  color: var(--black);
+}
+.expert-info p {
+  font-size: 16px;
+  color: var(--black);
+  margin-bottom: 0;
+}
+.driver-social-icon {
+  width: 50px;
+  background: var(--white);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 20%);
+  -webkit-transform: translate(50%, 20%);
+  -moz-transform: translate(50%, 20%);
+  -ms-transform: translate(50%, 20%);
+  -o-transform: translate(50%, 20%);
+}
+.driver-social-icon a {
+  width: 30px;
+  height: 30px;
+  color: var(--black);
+  background: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transition: all 0.3s linear;
+}
+.driver-social-icon a:hover {
+  background-color: var(--black);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.driver-social-icon i {
+  width: 16px;
+  height: 16px;
+}
+.driver-social-icon a:hover i {
+  font-size: 20px;
+  color: var(--white);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+/* Expart driver end */
+/*8. app store start */
+.taxi-app {
+  background: var(--black);
+  position: relative;
+}
+
+.taxi-app::after {
+  position: absolute;
+  content: "";
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+  background: var(--yellow);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  z-index: 1;
+}
+.app-right {
+  z-index: 10;
+}
+.WORKSPACE {
+  margin-left: -20px;
+}
+.taxi-app h5,
+.booking-bottom h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--yellow);
+}
+.taxi-app .small-title {
+  color: #606060;
+}
+.taxi-app-btn {
+  cursor: pointer;
+}
+.store {
+  padding: 5px 10px;
+}
+.store p {
+  font-size: 15px;
+  font-weight: 700;
+}
+.store i {
+  font-size: 40px;
+}
+.playstore,
+.apple-store:hover {
+  background: var(--yellow);
+  color: var(--black);
+  border: 1px solid transparent;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.playstore a,
+.apple-store:hover a {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 0;
+  color: var(--black);
+}
+.playstore:hover,
+.apple-store {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--yellow);
+  transition: all 0.3s linear;
+}
+.playstore:hover a,
+.apple-store a {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 0;
+  color: var(--white);
+}
+/* app store end */
+/* 9.taxi-feedback start */
+.taxi-feedback {
+  position: relative;
+  background-image: url(./../../image/feedback/BG1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 0;
+}
+.taxi-review-box {
+  background: var(--white);
+  padding: 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.taxi-review-star i {
+  color: var(--yellow);
+}
+.taxi-client-profile {
+  height: 100px;
+}
+.taxi-client-profile img {
+  width: 65px !important;
+  height: 65px !important;
+}
+
+.taxi-feedback .owl-dots {
+  position: relative;
+  margin-left: 80%;
+}
+.taxi-feedback .owl-dots button {
+  position: relative;
+}
+.taxi-feedback .owl-dots button::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: var(--black);
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  z-index: -1;
+}
+.taxi-feedback .owl-theme .owl-dots .owl-dot span {
+  width: 15px;
+  height: 15px;
+  border-radius: 0 !important;
+  margin: 5px 7px;
+  background: var(--black);
+  display: block;
+  transition: opacity 0.2s ease;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  z-index: 10;
+}
+.taxi-feedback .owl-theme .owl-dots .owl-dot.active span {
+  background-color: var(--yellow);
+}
+/* 9.taxi-feedback end */
+/* 10.taxi-rate start */
+.taxi-rate-cards {
+  gap: 30px;
+}
+.taxi-rate-cards .taxi-rate-card {
+  max-width: 370px;
+}
+
+.rate-card-img {
+  position: relative;
+}
+
+.taxi-steering {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  transition: all 0.3s linear;
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  z-index: 5;
+}
+.taxi-steering img {
+  border: 5px solid #bebcbc;
+}
+.tax-rate-btn {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--yellow);
+  color: var(--black);
+  padding: 10px 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  z-index: 5;
+}
+.tax-rate-btn:hover {
+  background-color: var(--black);
+  color: var(--yellow);
+}
+.overlay-rate {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(83, 83, 81, 0.3);
+  z-index: 2;
+}
+.taxi-rate-card h5 {
+  font-size: 24px;
+  font-family: "Catamaran", sans-serif;
+  color: var(--black);
+}
+.taxi-rate-card p {
+  font-size: 16px;
+  color: #606060;
+}
+.taxi-rate-card .group-item {
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 5px 0;
+  color: #606060;
+}
+.taxi-rate-card .group-item span:last-child {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+}
+.taxi-rate-card:hover .taxi-steering img {
+  border-color: var(--yellow);
+}
+.taxi-rate-card:hover .card {
+  border: 1px solid var(--yellow);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 29px 0px;
+}
+/* 10.taxi-rate end */
+/* 11.supper taxi start */
+.taxi-supper-right {
+  background-color: var(--white);
+  background-image: url(./../../image/super/Layer\ 31.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.videoPlayIcon,
+.telephone {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.videoPlayIcon {
+  border: 8px solid rgba(0, 0, 0, 0.9);
+}
+.dis-btn {
+  font-size: 18px;
+  color: var(--black);
+  background: var(--yellow);
+  margin-top: 30px;
+}
+.dis-btn:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+/* 11.supper taxi end */
+/*12. latest news start */
+.news-react {
+  width: 30px;
+  height: 30px;
+}
+.taxi-news-des h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  font-family: "Manrope", sans-serif;
+  color: var(--yellow);
+  text-transform: uppercase;
+}
+.taxi-news-des p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--black);
+}
+.taxi-news-des a {
+  background: var(--yellow);
+}
+.taxi-news-des a:hover {
+  color: var(--yellow);
+  background: var(--black);
+}
+.update-date {
+  position: relative;
+  z-index: 10 !important;
+}
+.update-date::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: "";
+  width: 50%;
+  height: 2px;
+  background: var(--yellow);
+}
+.news-small-img {
+  top: 13%;
+  left: 0;
+  z-index: 1;
+}
+.taxi-news .card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/*12. latest news end */
+/*13. footer start */
+footer {
+  background: rgb(29, 29, 27);
+  margin-top: 200px;
+}
+.taxi-footer-details {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  gap: 45px;
+}
+footer .wrapper {
+  position: relative;
+  background-image: url(../../image/footer/worldmap.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0 50px;
+}
+.f-card-container {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+  z-index: 10;
+}
+.f-card {
+  height: 150px;
+  background: rgb(255, 192, 0);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.card-box a {
+  width: 50px;
+  height: 50px;
+  background: var(--black);
+  color: var(--yellow);
+}
+.card-box p {
+  font-size: 15px;
+  font-size: 500;
+  font-family: "Catamaran", sans-serif;
+  color: var(--black);
+}
+.card-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black);
+}
+.f-card-2 {
+  background: var(--black);
+}
+.f-card-1 img,
+.f-card-3 img {
+  position: absolute;
+  left: 5%;
+  top: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.f-card-2 img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+}
+.f-main-cap {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.f-contact-btn {
+  background: var(--yellow);
+  color: var(--black);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.f-contact-btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+.menu-list ul {
+  padding-left: 0;
+}
+.menu-list ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white);
+  line-height: 40px;
+}
+.menu-list ul li .active {
+  color: var(--yellow);
+}
+.f-contact-item a {
+  width: 40px;
+  height: 40px;
+  background: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: var(--black);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.f-contact-item a:hover {
+  background-color: var(--white);
+}
+.f-contact-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Catamaran", sans-serif;
+  color: var(--yellow);
+}
+.f-contact-item p {
+  font-size: 14px;
+  color: rgb(244, 244, 244);
+}
+.f-letter p {
+  font-size: 14px;
+  color: var(--white);
+  margin: 30px 0;
+}
+.f-form {
+  position: relative;
+  width: 80%;
+}
+.f-form input {
+  width: 100%;
+  height: 70px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: var(--black);
+  border: none;
+  padding: 8px 30px;
+}
+.f-form input::placeholder {
+  font-size: 14px;
+  color: #606060;
+}
+.f-form input:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: rgba(226, 223, 21, 0.35) 0px 5px 15px;
+}
+
+.f-form a {
+  width: 50px;
+  height: 50px;
+  background: rgb(255, 192, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(29, 29, 27);
+  border-radius: 100%;
+  color: var(--black);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  transition: all 0.3s linear;
+  position: absolute;
+  right: 0;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+}
+.f-form a:hover {
+  background: var(--white);
+  font-size: 20px;
+}
+.f-form a:focus {
+  background-color: var(--white);
+}
+.f-social-icon a {
+  width: 40px;
+  height: 40px;
+  background: rgb(244, 244, 244);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: var(--black);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  transition: all 0.3s linear;
+}
+.f-social-icon a:hover {
+  background: var(--yellow);
+}
+.f-form a:hover i {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--yellow);
+}
+.f-social-icon a:hover i {
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-box-shadow: 0px 0px 36px 5px rgba(255, 192, 0.19);
+  -moz-box-shadow: 0px 0px 36px 5px rgba(45, 255, 196, 0.19);
+  box-shadow: 0px 0px 36px 5px rgba(45, 255, 196, 0.19);
+}
+.copy-right {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--black);
+  background: var(--yellow);
+}
+/*13. footer end */

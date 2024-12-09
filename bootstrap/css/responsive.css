@@ -1,0 +1,404 @@
+/* *****************
+Tempalete Name:Taxi -company Htm 5 Tempalets
+Author Name:NSS Theme
+Designer:Md. Samiul Ajom
+===============================
+1.Desktop,Laptop
+2.Tablet
+3.mobile
+*/
+/* extra large  */
+@media (min-width: 1900px) {
+  .taxi-banner .wrapper {
+    max-width: 1400px!important;
+
+  }
+}
+/* extra large  */
+/*1. Desktop,Laptop start*/
+@media (max-width: 1440px) {
+  /* common start */
+  .common {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .small-content {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .sub-title {
+    font-size: 16px;
+  }
+  /* common end */
+  /* header  start*/
+  .taxi-btn,
+  .nav-link,
+  .nav-side-item a,
+  .nav-side-item p {
+    font-size: 16px;
+  }
+  .taxi-nav-topbar p,
+  .taxi-nav-topbar a {
+    font-size: 16px;
+  }
+  nav {
+    height: 80px;
+  }
+  .nav-search-box {
+    top: 80px;
+  }
+  .taxi-nav-topbar {
+    padding: 0 80px 0 250px;
+  }
+  .navbar-brand {
+    width: 250px;
+    height: 80px;
+  }
+  /* header  end*/
+  /* banner start */
+  .taxi-banner .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .banner-caption {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  /* banner end */
+}
+@media (min-width: 1351px) {
+  .banner-caption {
+    font-size: 62px;
+    line-height: 72px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1350px) {
+  .taxi-supper-right .common {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .dis-btn {
+    margin-top: 0;
+  }
+  /* banner start */
+  .taxi-banner .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* banner end */
+}
+@media (max-width: 1200px) {
+  /* common start */
+  .wrapper {
+    max-width: 100%;
+  }
+  /* common end */
+  .taxi-nav-topbar {
+    padding: 0px 20px;
+  }
+  .search-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .navbar-brand {
+    width: 150px;
+  }
+  .taxi-btn,
+  .nav-link,
+  .nav-side-item a,
+  .nav-side-item p {
+    font-size: 12px;
+  }
+  .taxi-nav-topbar p,
+  .taxi-nav-topbar a {
+    font-size: 12px;
+  }
+  /* banner start */
+  .banner-caption {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .taxi-banner .wrapper .taxi-banner-overlay {
+    transform: translate(-20%, -50%);
+    -webkit-transform: translate(-20%, -50%);
+    -moz-transform: translate(-20%, -50%);
+    -ms-transform: translate(-20%, -50%);
+    -o-transform: translate(-20%, -50%);
+  }
+  /* banner end */
+}
+@media (max-width: 1024px) {
+  /* banner start */
+
+  .banner-caption {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .tax-rate-btn {
+    font-size: 13px;
+  }
+  /* banner end */
+}
+/*1. Desktop,Laptop end */
+/*2. Tablet start  */
+@media (max-width: 991px) {
+  /* header start */
+  nav {
+    height: unset;
+    background: var(--yellow);
+  }
+  .navbar-brand {
+    height: fit-content;
+  }
+  .navbar-nav {
+    padding: 20px 0;
+    align-items: self-start !important;
+  }
+  .navbar-nav li {
+    margin-left: 20px;
+    margin: 3px 0 5px 20px;
+  }
+  .search-icon {
+    left: 70%;
+  }
+  /* header end */
+  /* banner start */
+
+  .taxi-banner .wrapper {
+    max-width: 100%;
+  }
+  .banner-content {
+    left: 25% !important;
+  }
+  .taxi-banner .small-content {
+    width: 70%;
+  }
+  .taxi-carousel-btn .carousel-control-prev {
+    left: 0% !important;
+  }
+  .taxi-carousel-btn .carousel-control-next {
+    right: 0% !important;
+  }
+  /* banner end */
+  /* booking start */
+  .book-form-left::before {
+    right: -5%;
+  }
+  .book-form-left .small-title {
+    color: var(--white);
+  }
+
+  /* booking end */
+  /* expart drviver start*/
+  .expard-driver-card {
+    width: 260px;
+  }
+  /* expart drviver end*/
+  /* app start*/
+  .taxi-app::after {
+    display: none;
+  }
+  .WORKSPACE {
+    margin-left: 0;
+  }
+  .app-right {
+    background: var(--yellow);
+  }
+  /* app end*/
+  /* taxi rate start */
+  .taxi-rate-cards .taxi-rate-card {
+    max-width: 300px;
+  }
+  /* taxi rate end */
+  /* footer start  */
+  .taxi-footer-details {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 45px;
+  }
+  .taxi-footer-details .links:last-child {
+    grid-column: 1/-1;
+  }
+  /* footer end */
+}
+@media (max-width: 768px) {
+  /* common start*/
+  .small-content {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  /* common end*/
+  /* header start */
+  .taxi-btn {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .taxi-nav-topbar,
+  .taxi-nav-topbar .top-right {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+  .top-item a {
+    font-size: 14px;
+  }
+  /* header end */
+  /* banner start */
+
+  /* banner end */
+  /* book start */
+  .book-form-left {
+    margin-bottom: 50px;
+  }
+  .book-contact {
+    bottom: -10px;
+  }
+  .book-contact h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .book-form form input {
+    width: 100%;
+  }
+  /* book end */
+  /* feedback start*/
+  .taxi-feedback .owl-dots {
+    margin: 0;
+  }
+  .taxi-feedback .owl-dots::after {
+    width: 50%;
+  }
+  /* feedback end*/
+  /* taxi safe statrt */
+  .taxi-safe-tittle {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  /* taxi safe end */
+  /* expart driver start */
+  .expart-driver-cards {
+    column-gap: 10px;
+    flex-direction: column;
+  }
+  /* expart driver end */
+  /* footer strt */
+  .taxi-footer-details {
+    grid-template-columns: 1fr 1fr;
+  }
+  .taxi-footer-details .links:last-child {
+    grid-column: unset;
+  }
+  /* footer end */
+}
+@media (max-width: 767px) {
+  .book-nav li:not(:last-child)::after {
+    display: none;
+  }
+  .book-nav li {
+    padding: 2px 0;
+  }
+}
+/*2. Tablet end */
+/*3. Mobile start*/
+@media (max-width: 576px) {
+  /* common start*/
+  .common {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .sub-title {
+    font-size: 10px;
+    line-height: 20px;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+  /* common end */
+  /* banner start */
+  .taxi-carousel-btn button {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+  .taxi-banner .banner-content {
+    left: 20% !important;
+  }
+  .taxi-banner .small-content {
+    width: 100%;
+    line-height: 15px;
+    margin: 0;
+  }
+  .banner-caption {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 0;
+  }
+  .taxi-banner .taxi-btn {
+    font-size: 8px;
+    padding: 3px 8px;
+  }
+  .taxi-carousel-btn button::after {
+    width: 30px;
+    height: 30px;
+  }
+  .taxi-carousel-btn button::before {
+    height: 100px;
+  }
+  .taxi-carousel-btn .carousel-control-prev {
+    left: 5% !important;
+  }
+  .taxi-carousel-btn .carousel-control-next {
+    right: 5% !important;
+  }
+  /* banner end */
+  /* taxico start */
+
+  .years {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .experience-info img {
+    height: 20px;
+  }
+  .experience-info p {
+    font-size: 14px;
+  }
+  /* taxicon end */
+  /* expart diver start*/
+  .expert-info h2 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .expert-info p {
+    font-size: 12px;
+  }
+  /* expart diver end*/
+  /* footer start */
+  .taxi-footer-details {
+    margin-top: 100px !important;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 0;
+    row-gap: 10px;
+  }
+  .taxi-footer-details .links:last-child {
+    grid-column: 1;
+  }
+  .f-contact .f-contact-item {
+    flex-direction: column;
+  }
+  .f-social-icon {
+    justify-content: center;
+  }
+  .f-letter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* footer end */
+}
+/*3. Mobile end */
